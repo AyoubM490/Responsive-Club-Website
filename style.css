@@ -1,0 +1,137 @@
+html {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: lightsalmon;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #278180;
+  height: 3.2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+header nav a,
+footer nav a {
+  color: lightsalmon;
+  text-decoration: none;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+  margin-top: 66.18rem;
+}
+
+.title {
+  background-color: #7f4f3d;
+  color: #f87e4e;
+  text-align: center;
+  margin-top: 11.36rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.subtitle {
+  color: yellow;
+  margin-top: 23.72rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle + p {
+  margin-bottom: 1rem;
+}
+
+.subtitle + p + p {
+  margin-bottom: 2rem;
+}
+
+.comm-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.comm-img img {
+  width: 30%;
+  margin-bottom: 2.2rem;
+}
+
+.quote {
+  background-color: #278180;
+  color: yellow;
+}
+
+.quote h1 {
+  margin-left: 0.5rem;
+  padding-top: 2rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.quote p {
+  margin-left: 0.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.meetup {
+  text-align: center;
+  color: yellow;
+  margin-bottom: 1.5rem;
+}
+
+[src*="runners-church"] {
+  width: 40%;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .comm-img img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    margin-top: 2rem;
+    max-height: 200px;
+  }
+
+  .comm-img img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    /* height: 500px; */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .quote h1 {
+    font-size: 2rem;
+  }
+
+  header,
+  footer {
+    height: 80px;
+  }
+
+  .comm-img img {
+    width: 100%;
+  }
+}
